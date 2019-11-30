@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Login!</h1>
+    <div class="contanier">
+        <div class="alert alert-warning" *ngIf="invalidCred">{{invalidCredErrorMsg}}</div>
+        <div>
+            <form (ngSubmit)=handleBasicAuthLogin()>
+            <!-- <form (ngSubmit)=handleLogin()> -->
+                <h4>Username :</h4> <input class="form-control " type="text" name="username" [(ngModel)]="username" />
+                <h4>Password :</h4> <input class="form-control" type="password" name="password" [(ngModel)]="password" /> &nbsp;
+                <button type="submit" class="form-control btn btn-success">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

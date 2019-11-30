@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Welcome {{user}}!</h1>
+    <div>
+        <h6>
+            Now managing your Todo tasks is easy.<br/> To manage your Todos, click <b><a routerLink="/todos">here</a></b>
+        </h6>
+    </div>
+    <br/><br/>
+
+</div>
+<div class="container">
+    We have a message for you. click the below button to view the message.<br/>
+    <button class="btn btn-success" (click)="getWelcomeMessage()">Get Welcome Message</button>
+</div>
+<br/><br/>
+<div class="container" *ngIf="welcomeMessage">
+    <h2>Message for {{user}}:</h2>
+    <p>{{welcomeMessage}}</p>
+</div>
