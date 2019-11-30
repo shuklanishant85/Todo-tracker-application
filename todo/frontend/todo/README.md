@@ -1,6 +1,7 @@
 # Todo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+This project is created for tracking daily tasks.
+It has been created for hands-on learning using course provided by Rangakaranam on Udemy.
 
 ## Development server
 
